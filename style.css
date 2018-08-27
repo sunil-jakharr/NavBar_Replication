@@ -1,0 +1,87 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.toggle{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background: #2ECC40;
+}
+
+
+.toggle i{
+    position: fixed;
+    right: 15px;
+    top: 9px;
+    font-size:25px;
+    cursor: pointer;
+    
+}
+
+nav.desk, nav.mob{
+    width: 100%;
+    background:#2ECC40;
+    color: black;
+}
+
+.desk ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    
+}
+.desk li,
+.mob li{
+    cursor: pointer;
+    padding: 1rem;
+    flex: auto;
+    text-align: center
+}
+.desk li:hover{
+    background:#111111;
+    color: #2ECC40;
+    transition: 0.2s linear;
+}
+
+.mob {
+    display: none;
+}
+
+.toggle{
+    display: none;
+}
+    
+@media screen and (max-width:700px){
+    .desk{
+        display: none;
+    }
+    
+    .toggle{
+        display:block;
+    }
+    
+    .mob  {
+        display: block;
+    }
+    
+    .mob ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .mob li:hover{
+    background:#111111;
+    color: #2ECC40;
+    transition: all 0.2s ease;
+        
+    }
+    
+    
+    
+}
